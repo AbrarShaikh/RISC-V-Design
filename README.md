@@ -9,7 +9,7 @@ It is defined as a base integer ISA. There are 2 primary base integer variants, 
 It suits all sizes of processors, from the tiniest embedded controller to the fastest high-performance processors.
 
 ## Comparision with ARM
-a 4 Bit Up counter is compared between RISC-V compiler and ARM GCC.\
+A 4 Bit Up counter is compared between RISC-V compiler and ARM GCC.\
 It can be observed that RISC-V ASM doesn't have reserved/Specific Stack-based operation instructions like POP and PUSH, instead, its uses Stack Pointer.\
 RISC-V has Fixed and Reduced set of instructions.
 ##
