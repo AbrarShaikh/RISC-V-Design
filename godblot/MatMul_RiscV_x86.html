@@ -1,0 +1,925 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+body { font-family: sans-serif; font-size: 11pt; }
+img.AutoScale { max-width: 100%; max-height: 100%; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #696969; background-color: #F0F0F0; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigDel { color: #000000; background-color: #FFE3E3; text-decoration: line-through; }
+</style>
+<title>Text Compare</title>
+</head>
+<body>
+Text Compare<br>
+Produced: 23-12-23 10:06:29 PM<br>
+&nbsp; &nbsp;
+<br>
+Mode:&nbsp; All &nbsp;
+<br>
+Left file: D:\RISC-V_VSD\godbolt\MatMulx86.i&nbsp; &nbsp;&nbsp; Right file: D:\RISC-V_VSD\godbolt\MatrixMul.i &nbsp;
+<br>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionAll">
+<td class="TextItemSigMod">.LC<span class="TextSegSigDiff">0</span>:</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">.LC<span class="TextSegSigDiff">1</span>:</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; .string &quot;Multiplication of given two matrices is:&quot;</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; .string &quot;Multiplication of given two matrices is:&quot;</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSigMod">.LC<span class="TextSegSigDiff">1</span>:</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">.LC<span class="TextSegSigDiff">2</span>:</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; .string &quot;%d\t&quot;</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; .string &quot;%d\t&quot;</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSigMod">.LC<span class="TextSegSigDiff">2</span>:</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">.LC<span class="TextSegSigDiff">3</span>:</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; .string &quot;Total time taken in seconds %d:\n&quot;</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; .string &quot;Total time taken in seconds %d:\n&quot;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">mulMat(int (*) [2], int (*) [2]):</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">mulMat(int (*) [2], int (*) [2]):</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">push</span>&nbsp; &nbsp; <span class="TextSegSigDiff">rb</span>p</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">addi</span>&nbsp; &nbsp; <span class="TextSegSigDiff">sp,s</span>p<span class="TextSegSigDiff">,-80</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">mov</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">rbp,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rsp</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; s<span class="TextSegSigDiff">ub</span>&nbsp; &nbsp;&nbsp; rsp<span class="TextSegSigDiff">,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">64</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; s<span class="TextSegSigDiff">w</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; r<span class="TextSegSigDiff">a,76(</span>sp<span class="TextSegSigDiff">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">QWORD</span> <span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-56],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rdi</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">sw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">s0,72(sp)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">QWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegInsigDiff">P</span><span class="TextSegSigDiff">TR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-64]</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rsi</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">addi</span>&nbsp; &nbsp; <span class="TextSegSigDiff">s0,s</span><span class="TextSegInsigDiff">p</span>,<span class="TextSegSigDiff">80</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">edi,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">OFFSET</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">FLAT:.LC</span>0</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">sw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a0</span><span class="TextSegSigDiff">,-68(s</span>0<span class="TextSegSigDiff">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">sw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a1,-72(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lui</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">a5,%hi(.LC1)</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">addi</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a0,a5,%lo(.LC1)</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; call&nbsp; &nbsp; puts</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; call&nbsp; &nbsp; puts</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; call&nbsp; &nbsp; clock</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; call&nbsp; &nbsp; clock</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">QWORD</span> <span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-</span><span class="TextSegSigDiff">24],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rax</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">sw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">a0,</span><span class="TextSegSigDiff">-32(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">DWORD</span> <span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-4],</span><span class="TextSegInsigDiff"> </span>0</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">sw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">zero,</span><span class="TextSegSigDiff">-20(s</span>0<span class="TextSegSigDiff">)</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; j<span class="TextSegSigDiff">mp</span>&nbsp; &nbsp;&nbsp; .L2</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; j<span class="TextSegInsigDiff">&nbsp; </span>&nbsp; &nbsp;&nbsp; .L2</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">.L7:</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">.L7:</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">DWORD</span> <span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-8],</span><span class="TextSegInsigDiff"> </span>0</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">sw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">zero,</span><span class="TextSegSigDiff">-24(s</span>0<span class="TextSegSigDiff">)</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; j<span class="TextSegSigDiff">mp</span>&nbsp; &nbsp;&nbsp; .L3</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; j<span class="TextSegInsigDiff">&nbsp; </span>&nbsp; &nbsp;&nbsp; .L3</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">.L6:</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">.L6:</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">eax</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-8]</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5</span>,<span class="TextSegSigDiff">-20(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">cdqe</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">slli</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a4,a5,1</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">edx</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp</span>-<span class="TextSegSigDiff">4]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5</span>,-<span class="TextSegSigDiff">24(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">movsx</span><span class="TextSegInsigDiff">&nbsp;&nbsp; </span><span class="TextSegSigDiff">rdx,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">edx</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">rdx</span><span class="TextSegSigDiff">,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rdx</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a4,a4,a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">addi</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,s0,-52</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">slli</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a4,a4,2</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">r</span><span class="TextSegSigDiff">ax,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rdx</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5,a4,a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span> <span class="TextSegSigDiff">PTR</span> <span class="TextSegSigDiff">[</span><span class="TextSegSigDiff">rbp-48+rax*4]</span>,<span class="TextSegInsigDiff"> </span>0</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">sw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">zero</span>,0<span class="TextSegSigDiff">(a5)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">DWORD</span> <span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-12],</span><span class="TextSegInsigDiff"> </span>0</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">sw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">zero,</span><span class="TextSegSigDiff">-</span><span class="TextSegSigDiff">28(s</span>0<span class="TextSegSigDiff">)</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; j<span class="TextSegSigDiff">mp</span>&nbsp; &nbsp;&nbsp; .L4</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; j<span class="TextSegInsigDiff">&nbsp; </span>&nbsp; &nbsp;&nbsp; .L4</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">.L5:</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">.L5:</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">eax</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-8]</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5</span>,<span class="TextSegSigDiff">-20(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">cdqe</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">slli</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a4,a5,1</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">edx</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp</span>-<span class="TextSegSigDiff">4]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5</span>,-<span class="TextSegSigDiff">24(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">movsx</span>&nbsp;&nbsp; <span class="TextSegSigDiff">rdx</span><span class="TextSegSigDiff">,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">edx</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">add</span><span class="TextSegInsigDiff">&nbsp; </span>&nbsp;&nbsp; <span class="TextSegSigDiff">a4,a4,a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">addi</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,s0,-52</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">slli</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a4,a4,2</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">rdx</span><span class="TextSegSigDiff">,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rdx</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5,a4,a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a4,0(a5)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,-20(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">slli</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,a5,3</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a3,-68(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">r</span><span class="TextSegSigDiff">ax,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rdx</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a3,a3,a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">ecx</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-48+rax*4]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5</span>,<span class="TextSegSigDiff">-28(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">e</span><span class="TextSegSigDiff">ax,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-4]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">slli</span>&nbsp; &nbsp; <span class="TextSegSigDiff">a5,a5,2</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">c</span><span class="TextSegSigDiff">dqe</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">add</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">a5,a3,a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; l<span class="TextSegSigDiff">ea</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">rdx</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[0+rax*8]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; l<span class="TextSegSigDiff">w</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a3</span>,<span class="TextSegSigDiff">0(</span><span class="TextSegSigDiff">a5)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">rax</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">QWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-56]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5</span>,<span class="TextSegSigDiff">-28(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">slli</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,a5,3</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a2,-72(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">rdx</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rax</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a2,a2</span>,<span class="TextSegSigDiff">a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">eax</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-12]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5</span>,<span class="TextSegSigDiff">-</span><span class="TextSegSigDiff">24(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">cdqe</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">slli</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,a5,2</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">edx</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rdx+rax*4]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">add</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5,a2</span>,<span class="TextSegSigDiff">a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">eax,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-12]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5,0(a5)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">cdqe</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mul</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">a5,a3,a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">add</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">a4,a4,a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,-20(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lea</span>&nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rsi</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[0+rax*8]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">slli</span>&nbsp; &nbsp; <span class="TextSegSigDiff">a3</span>,<span class="TextSegSigDiff">a5,1</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">rax</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">QWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-64]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5</span>,<span class="TextSegSigDiff">-24(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">add</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">a3,a3,a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">r</span><span class="TextSegSigDiff">si,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rax</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add<span class="TextSegSigDiff">i</span>&nbsp; &nbsp; <span class="TextSegSigDiff">a5,s0,-52</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">e</span><span class="TextSegSigDiff">ax,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-8]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">slli</span>&nbsp; &nbsp; <span class="TextSegSigDiff">a3,a3,2</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">cdqe</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">mov</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">eax,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rsi+rax*4]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">imul</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">eax,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">edx</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lea</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">edx,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rcx+rax]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">mov</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">eax,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-8]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">cdqe</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">mov</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">ecx,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-4]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">movsx</span><span class="TextSegInsigDiff">&nbsp;&nbsp; </span><span class="TextSegSigDiff">rcx,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">ecx</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">rcx</span><span class="TextSegSigDiff">,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rcx</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5,a3,a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">sw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a4,0(a5)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,-28(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">r</span><span class="TextSegSigDiff">ax,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rcx</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add<span class="TextSegSigDiff">i</span>&nbsp; &nbsp; <span class="TextSegSigDiff">a5,a5,1</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span> <span class="TextSegSigDiff">PTR</span> <span class="TextSegSigDiff">[rbp-48+rax*4],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">edx</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">sw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">a5,</span><span class="TextSegSigDiff">-28(s0)</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">add</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-12],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">.L4:</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">.L4:</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">cmp</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">DWORD</span> <span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-12],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">a4,</span><span class="TextSegSigDiff">-</span><span class="TextSegSigDiff">28(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">li</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,1</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">j</span>le&nbsp; &nbsp;&nbsp; .L5</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">b</span>le&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a4,a5,</span>.L5</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">eax</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-8]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5</span>,<span class="TextSegSigDiff">-20(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">cdqe</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">slli</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a4,a5,1</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">edx</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp</span>-<span class="TextSegSigDiff">4]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5</span>,-<span class="TextSegSigDiff">24(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">movsx</span><span class="TextSegInsigDiff">&nbsp;&nbsp; </span><span class="TextSegSigDiff">rdx,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">edx</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">rdx</span><span class="TextSegSigDiff">,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rdx</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a4,a4,a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">addi</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,s0,-52</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">slli</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a4,a4,2</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">r</span><span class="TextSegSigDiff">ax,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rdx</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; add&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5,a4,a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">eax,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-48+rax*4]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5,0(</span><span class="TextSegSigDiff">a5)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">mov</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">esi,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">eax</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">mov</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">edi,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">OFFSET</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">FLAT:.LC1</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; m<span class="TextSegSigDiff">o</span>v&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">eax,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">0</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; mv<span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a1,a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lui</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">a5,%hi(.LC2)</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">addi</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a0,a5,%lo(.LC2)</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; call&nbsp; &nbsp; printf</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; call&nbsp; &nbsp; printf</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">add</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">DWORD</span> <span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-8],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">a5,</span><span class="TextSegSigDiff">-24(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">addi</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,a5,1</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">sw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,-24(s0)</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">.L3:</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">.L3:</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">cmp</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">DWORD</span> <span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-8],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">a4,</span><span class="TextSegSigDiff">-24(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">li</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,1</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">j</span>le&nbsp; &nbsp;&nbsp; .L6</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">b</span>le&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a4,a5,</span>.L6</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">edi</span>,<span class="TextSegInsigDiff"> </span>10</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">li</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a0</span>,10</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; call&nbsp; &nbsp; putchar</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; call&nbsp; &nbsp; putchar</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">add</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">DWORD</span> <span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-4],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">a5,</span><span class="TextSegSigDiff">-20(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">addi</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,a5,1</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">sw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,-20(s0)</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">.L2:</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">.L2:</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">cmp</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">DWORD</span> <span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-4],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">a</span><span class="TextSegSigDiff">4</span><span class="TextSegSigDiff">,-20(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">li</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,1</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">j</span>le&nbsp; &nbsp;&nbsp; .L7</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">b</span>le&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a4,a5,</span>.L7</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; call&nbsp; &nbsp; clock</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; call&nbsp; &nbsp; clock</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">QWORD</span> <span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp</span>-3<span class="TextSegSigDiff">2],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rax</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">sw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">a0,</span>-3<span class="TextSegSigDiff">6(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">rax</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">QWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp</span>-3<span class="TextSegSigDiff">2]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a4</span>,-3<span class="TextSegSigDiff">6(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">sub</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">rax</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">QWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp</span>-<span class="TextSegSigDiff">24]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5</span>,-<span class="TextSegSigDiff">32(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">rsi</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rax</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">sub</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5,a4</span>,<span class="TextSegSigDiff">a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">mov</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">edi,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">OFFSET</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">FLAT:.LC2</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; m<span class="TextSegSigDiff">o</span>v&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">eax,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">0</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; mv<span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a1,a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lui</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">a5,%hi(.LC3)</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">addi</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a0,a5,%lo(.LC3)</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; call&nbsp; &nbsp; printf</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; call&nbsp; &nbsp; printf</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; nop</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; nop</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">ra,76(sp)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">s0,72(sp)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">addi</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">sp,sp,80</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">le</span><span class="TextSegSigDiff">ave</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">jr</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">ra</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegSigDiff">.LC0:</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">ret</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">.word</span><span class="TextSegInsigDiff">&nbsp;&nbsp; </span><span class="TextSegSigDiff">1</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">.word</span><span class="TextSegInsigDiff">&nbsp;&nbsp; </span><span class="TextSegSigDiff">1</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">.word</span><span class="TextSegInsigDiff">&nbsp;&nbsp; </span><span class="TextSegSigDiff">2</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">.word</span><span class="TextSegInsigDiff">&nbsp;&nbsp; </span><span class="TextSegSigDiff">2</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">main:</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">main:</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">push</span>&nbsp; &nbsp; <span class="TextSegSigDiff">rb</span>p</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">addi</span>&nbsp; &nbsp; <span class="TextSegSigDiff">sp,s</span>p<span class="TextSegSigDiff">,-48</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">mov</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">rbp,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rsp</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; s<span class="TextSegSigDiff">ub</span>&nbsp; &nbsp;&nbsp; rsp<span class="TextSegSigDiff">,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">32</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; s<span class="TextSegSigDiff">w</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; r<span class="TextSegSigDiff">a,44(</span>sp<span class="TextSegSigDiff">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">DWORD</span> <span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-16],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">sw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">s0,40(sp)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-12],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">addi</span>&nbsp; &nbsp; <span class="TextSegSigDiff">s0,s</span><span class="TextSegSigDiff">p</span><span class="TextSegSigDiff">,48</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">DWORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-8],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lui</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a5</span><span class="TextSegSigDiff">,%hi(.LC0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp;&nbsp; &nbsp;<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DW</span><span class="TextSegSigDiff">ORD</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-4],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">addi</span>&nbsp; &nbsp; <span class="TextSegSigDiff">a5,a5,%lo(.LC0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">DWORD</span> <span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-32],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">a</span><span class="TextSegSigDiff">2</span><span class="TextSegSigDiff">,0(a5)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp; <span class="TextSegSigDiff">DWORD</span> <span class="TextSegSigDiff">PTR</span> <span class="TextSegSigDiff">[rbp-28],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">1</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">a3</span><span class="TextSegSigDiff">,4(a5)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">DWORD</span> <span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-24],</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">2</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">a</span><span class="TextSegSigDiff">4</span><span class="TextSegSigDiff">,8(a5)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">mov</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">DWORD</span> <span class="TextSegSigDiff">PTR</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-20],</span><span class="TextSegInsigDiff"> </span>2</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lw</span>&nbsp; &nbsp; &nbsp; <span class="TextSegSigDiff">a5</span><span class="TextSegSigDiff">,1</span>2<span class="TextSegSigDiff">(a5)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lea</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">rdx</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp</span>-32<span class="TextSegSigDiff">]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">sw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a2</span>,-32<span class="TextSegSigDiff">(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">lea</span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">rax</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">[rbp-16]</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">sw</span><span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a3</span>,<span class="TextSegSigDiff">-28(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">sw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a4,-24(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">sw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,-20(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lui</span><span class="TextSegInsigDiff">&nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">a5,%hi(.LC0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">addi</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,a5,%lo(.LC0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a2,0(a5)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a3,4(a5)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a4,8(a5)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,12(a5)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">sw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a2,-48(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">sw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a3,-44(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">sw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a4,-40(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">sw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,-36(s0)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">addi</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a4,s0,-48</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">addi</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,s0,-32</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; m<span class="TextSegSigDiff">o</span>v&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">rsi,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rdx</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; mv<span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a1</span><span class="TextSegSigDiff">,a4</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; m<span class="TextSegSigDiff">o</span>v&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">rdi</span>,<span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">rax</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; mv<span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a0</span>,<span class="TextSegSigDiff">a5</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; call&nbsp; &nbsp; mulMat(int (*) [2], int (*) [2])</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; call&nbsp; &nbsp; mulMat(int (*) [2], int (*) [2])</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">li</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">a5,0</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; m<span class="TextSegSigDiff">o</span>v&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">eax,</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">0</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; mv<span class="TextSegInsigDiff"> </span>&nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">a0,a5</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; l<span class="TextSegSigDiff">e</span><span class="TextSegSigDiff">ave</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; l<span class="TextSegSigDiff">w</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">ra,44(sp)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">lw</span><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">s0,40(sp)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod"><span class="TextSegInsigDiff">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span><span class="TextSegSigDiff">addi</span><span class="TextSegInsigDiff">&nbsp; &nbsp; </span><span class="TextSegSigDiff">sp,sp,48</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; r<span class="TextSegSigDiff">et</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSigMod">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">j</span>r<span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">ra</span></td>
+</tr>
+</table>
+<br>
+</body>
+</html>
