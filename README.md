@@ -11,8 +11,8 @@ It suits all sizes of processors, from the tiniest embedded controller to the fa
 ### Comparision with ARM
 A 4 Bit Up counter is compared between RISC-V compiler and ARM GCC.\
 It can be observed that RISC-V ASM doesn't have reserved/Specific Stack-based operation instructions like POP and PUSH, instead, its uses Stack Pointer.\
-RISC-V has Fixed and Reduced set of instructions.
-##
+RISC-V has Fixed and Reduced set of instructions based on Load and Store architecture.
+###
 [ARM : in left, RISC-V : in Right]
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/dfd89812-bc09-4004-aabd-bc0a5dc3f505)
 
@@ -26,7 +26,7 @@ The installation was done with VDI file from  https://forgefunder.com/~kunal/ris
 ![Screenshot 2023-12-24 180906](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/379a3f69-27e0-4acf-8a9d-97704b86ad9b)
 
 #### Verilog
-Test Bench is written with Two 4-bit inputs as A=11 and B=3, and a 3-bit select line (SL) looping from 0 to 7. Giving result to out signal.\
+Test Bench is written with Two 4-bit inputs as A=11, B=3, and a 3-bit select line (SL) looping from 0 to 7. Giving result to out signal.\
 e.g ==> for SL=3, Division is performed and the result is stored in 2 parts, MSB having Quotient and LSB having Remender.\
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/5bc6aed1-ef43-47a9-a230-022618372ff5)
 
