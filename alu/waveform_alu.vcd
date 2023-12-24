@@ -1,0 +1,106 @@
+$date
+	Sun Dec 24 21:06:02 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_alu $end
+$var wire 8 ! ALU_Out [7:0] $end
+$var reg 4 " A [3:0] $end
+$var reg 3 # ALU_Sel [2:0] $end
+$var reg 4 $ B [3:0] $end
+$var integer 32 % i [31:0] $end
+$scope module test_unit $end
+$var wire 3 & SL [2:0] $end
+$var wire 4 ' a [3:0] $end
+$var wire 4 ( b [3:0] $end
+$var wire 8 ) out [7:0] $end
+$var reg 8 * an [7:0] $end
+$var reg 4 + q [3:0] $end
+$var reg 4 , r [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx ,
+bx +
+b1110 *
+b1110 )
+b11 (
+b1011 '
+b0 &
+b0 %
+b11 $
+b0 #
+b1011 "
+b1110 !
+$end
+#5
+b1000 !
+b1000 )
+b1000 *
+b1 %
+b1 #
+b1 &
+#10
+b100001 !
+b100001 )
+b100001 *
+b10 %
+b10 #
+b10 &
+#15
+b110010 !
+b110010 )
+b110010 *
+b10 ,
+b11 +
+b11 %
+b11 #
+b11 &
+#19
+bx ,
+bx +
+#20
+b1011 !
+b1011 )
+b1011 *
+b100 %
+b100 #
+b100 &
+#25
+b11 !
+b11 )
+b11 *
+b101 %
+b101 #
+b101 &
+#30
+b1000 !
+b1000 )
+b1000 *
+b110 %
+b110 #
+b110 &
+#35
+b1011000 !
+b1011000 )
+b1011000 *
+b111 %
+b111 #
+b111 &
+#38
+b1 !
+b1 )
+b1 *
+#40
+b1110 !
+b1110 )
+b1110 *
+b1000 %
+b0 #
+b0 &
