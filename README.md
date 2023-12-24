@@ -16,8 +16,15 @@ RISC-V has Fixed and Reduced set of instructions.
 [ARM : in left, RISC-V : in Right]
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/dfd89812-bc09-4004-aabd-bc0a5dc3f505)
 
-### Lab setup
+## Lab setup
 The lab is set up in a Virtual machine "Oracle VirtualBox" with Ubuntu 18.04.\
 The installation was done with VDI file from  https://forgefunder.com/~kunal/riscv_workshop.vdi
 
-###
+### 4 Bit ALU simulation
+#### C-Code
+2 float numbers are taken as input and which operation to perform (addition, subtraction, multiplication and division).\
+![Screenshot 2023-12-24 180906](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/379a3f69-27e0-4acf-8a9d-97704b86ad9b)
+
+#### Verilog
+##
+![Screenshot 2023-12-24 174818](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/72ac902d-4c9f-4e95-b654-dda04a588ae9)
