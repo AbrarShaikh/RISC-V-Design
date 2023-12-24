@@ -22,9 +22,11 @@ The installation was done with VDI file from  https://forgefunder.com/~kunal/ris
 
 ### 4 Bit ALU simulation
 #### C-Code
-2 float numbers are taken as input and which operation to perform (addition, subtraction, multiplication and division).\
+2 float numbers are taken as input and which operation to perform (addition, subtraction, multiplication, division and Bitwise operations like AND, OR, XOR, L/R-shift ).\
 ![Screenshot 2023-12-24 180906](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/379a3f69-27e0-4acf-8a9d-97704b86ad9b)
 
 #### Verilog
-##
-![Screenshot 2023-12-24 174818](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/72ac902d-4c9f-4e95-b654-dda04a588ae9)
+Test Bench is written with Two 4-bit inputs as A=11 and B=3, and a 3-bit select line (SL) looping from 0 to 7. Giving result to out signal.\
+e.g ==> for SL=3, Division is performed and the result is stored in 2 parts, MSB having Quotient and LSB having Remender.\
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/5bc6aed1-ef43-47a9-a230-022618372ff5)
+
