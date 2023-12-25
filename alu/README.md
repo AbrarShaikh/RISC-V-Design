@@ -29,10 +29,11 @@ Waveform is analysed in the ```GTKwave``` application.
 
 1s complement of 19 = 11101100
 2s complement of 19 = 11101101
+
+10 + (-19) ==>
 ```
 ``` using 2's complement method```
 ```
-10 + (-19) ==>
   00001010
 + 11101101
 ------------
@@ -60,10 +61,11 @@ Ans = -9
 
 1s complement of 12 = 11110011
 2s complement of 12 = 11110100
+
+36 + (-12) ==>
 ```
 ``` using 2's complement method```
 ```
-36 + (-12) ==>
   00100100
 + 11110100
 -----------
