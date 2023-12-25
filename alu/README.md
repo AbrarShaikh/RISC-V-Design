@@ -54,7 +54,7 @@ MS bit is 1, hence the result is negative
 Ans = -9
 ```
 
-```36-12 = 24```
+```36 - 12 = 24```
 ```
 36 = 00100100
 12 = 00001100
