@@ -37,6 +37,11 @@ Waveform is analysed in the GTKwave application.
 + 11101101
 ------------
   11110111
+MS bit is 1, hence the result is negative
+1s complement of 11110111 = 00001000
+2s complement of 11110111 = 00001001
+Ans = -9
+
 ```
 ```36-12 = 24```
 ```
@@ -53,4 +58,6 @@ Waveform is analysed in the GTKwave application.
 + 11110100
 -----------
   00011000
+MS bit is 1, hence the result is positive
+Ans - 24
 ```
