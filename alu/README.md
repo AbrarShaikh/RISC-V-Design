@@ -18,7 +18,7 @@ Test bench is written by keeping 2-input numbers constant and looping select lin
 
 Test result was dumped using ```$dumpfile("waveform_alu.vcd")``` in vcd format.\
 And all variables are saved using ```$dumpvars```
-Waveform is analysed in the GTKwave application.
+Waveform is analysed in the ```GTKwave``` application.
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/bad63c8e-8eac-4600-b813-8258d4fe06fb)
 
 ## Subtraction using 1's and 2's complement binary arithmetic
@@ -41,8 +41,18 @@ MS bit is 1, hence the result is negative
 1s complement of 11110111 = 00001000
 2s complement of 11110111 = 00001001
 Ans = -9
-
 ```
+``` using 1's complement method```
+```
+  00001010
++ 11101100
+------------
+  11110110
+MS bit is 1, hence the result is negative
+1s complement of 11110110 = 00001001
+Ans = -9
+```
+
 ```36-12 = 24```
 ```
 36 = 00100100
@@ -58,6 +68,17 @@ Ans = -9
 + 11110100
 -----------
   00011000
-MS bit is 1, hence the result is positive
-Ans - 24
+MS bit is 0, hence the result is positive
+Ans is 24
+```
+``` using 1's complement method```
+```
+  00100100
++ 11110011
+------------
+1,00010111
+MS bit is 0, hence the result is positive
+But, carry is 1, hence adding to LS bite
+00010111 + 1 = 00011000
+Ans = 24
 ```
