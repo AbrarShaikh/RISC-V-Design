@@ -21,4 +21,33 @@ And all variables are saved using ```$dumpvars```
 Waveform is analysed in the GTKwave application.
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/bad63c8e-8eac-4600-b813-8258d4fe06fb)
 
+## Subtraction using 2's complement binary arithmetic
+```
+10 - 19 = -9
+10 --> 00001010
+19 --> 00010011
 
+1s complement of 19 = 11101100
+2s complement of 19 = 11101101
+
+10 + (-19) ==>
+  00001010
++ 11101101
+------------
+  11110111
+```
+```
+36-12 = 24
+
+36 = 00100100
+12 = 00001100
+
+1s complement of 12 = 11110011
+2s complement of 12 = 11110100
+
+36 + (-12) ==>
+  00100100
++ 11110100
+-----------
+  00011000
+```
