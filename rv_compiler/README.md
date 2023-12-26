@@ -1,4 +1,4 @@
-##RISC-V Compiler
+## RISC-V Compiler
 
 Compilation
 ```
