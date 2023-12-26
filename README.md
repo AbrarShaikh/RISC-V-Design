@@ -23,7 +23,11 @@ The installation was done with VDI file from  https://forgefunder.com/~kunal/ris
 ### 4 Bit ALU simulation
 #### C-Code
 2 float numbers are taken as input and which operation to perform (addition, subtraction, multiplication, division and Bitwise operations like AND, OR, XOR, L/R-shift ).\
+It can be oberserved that ```Text code``` of RISC-V is **28x** times compare to x86 and ```Data``` is **7x** time.
+#### x86 gcc-Compiler
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/7c059506-77e8-4f4e-8d08-82854b59d109)
+#### RISC-V gcc-Compiler
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/2009526c-5f05-449f-89bf-5a68bae9b561)
 
 #### Verilog
 Test Bench is written with Two 4-bit inputs as A=11, B=3, and a 3-bit select line (SL) looping from 0 to 7. Giving result to out signal.\
