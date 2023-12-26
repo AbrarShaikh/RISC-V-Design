@@ -1,0 +1,7 @@
+/home/vsduser/riscv32-toolchain/bin/riscv32-unknown-elf-gcc --version
+
+riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -ffreestanding -o ./output.o filename.c
+
+riscv64-unknown-elf-gcc -o hello hello.c
+riscv64-unknown-elf-gcc -S hello.c
+spike pk hello
