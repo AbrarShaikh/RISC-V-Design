@@ -13,7 +13,9 @@ Execution
 spike pk alurv
 ```
 ### ALU
-4-Bit ALU C-code has complied in RV-gcc ans x86-gcc and output and reassembled code is compared.
+4-Bit ALU C-code has complied in RV-gcc ans x86-gcc and output and Dis-Assembled code is compared.
 ![Screenshot 2023-12-26 195934](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/42f5e4b5-74b0-4b23-b153-0ce70d374788)
+#### Assembly code Comparison generated from GCC
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/72b9ff70-5795-4b85-8a60-e9c67a24c16c)
 
 
