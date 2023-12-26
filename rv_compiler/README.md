@@ -6,7 +6,7 @@ riscv64-unknown-elf-gcc alu.c -o alurv
 ```
 Assembly
 ```
-riscv64-unknown-elf-gcc -S alu.c -alurv.s
+riscv64-unknown-elf-gcc -S alu.c -o alurv.s
 ```
 Execution
 ```
