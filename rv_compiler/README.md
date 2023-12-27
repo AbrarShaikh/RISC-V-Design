@@ -1,6 +1,6 @@
 ## RISC-V Compiler
 
-Compilation
+Compilation\
 -- with 64-bit rv
 ```
 riscv64-unknown-elf-gcc alu.c -o alurv
