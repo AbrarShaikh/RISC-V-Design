@@ -14,6 +14,11 @@ Assembly
 ```
 riscv64-unknown-elf-gcc -S alu.c -o alurv.s
 ```
+-- Dump to assembly in text format without #includes,libraries and print
+```
+riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -ffreestanding -nostdlib -o output filename.c
+riscv64-unknown-elf-objdump -d -r output > assembly.txt
+```
 Execution
 ```
 spike pk alurv
