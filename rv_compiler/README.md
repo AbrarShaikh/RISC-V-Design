@@ -22,20 +22,31 @@ The total file size is **25x**.\
 #### Comparison Using https://godbolt.org/
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/c05ef98f-a4a8-4072-a18f-1ba32760f8c3)
 
-### CPU Performance
+## CPU Performance
 
 CPU execution time of a program can be calculated as
 ```
 CPU Time = CPI x Instruction count x Clock Cycle Time
 ```
+```
+CPU clock cycles = CPI x Instruction count
+```
 In general, RICS-V’s cores ```e.g. SiFive U54``` execute one instruction per clock cycle per pipeline.\
 Hence **CPI** is 1.
 
-#### ALU
+### ALU
 in alu.c code there are 191 instructions.
 so the ```Number of CPU clock cycles``` for alu program is 191x1 = 191.\
 Assuming the clock cycle to be 1GHz.\
-CPU time is ~ 0.2 pic seconds.
+CPU time is ~ 0.2 pico-seconds.
+
+### Count
+from https://godbolt.org/z/efvE7njTv: there are 41 instructions.\
+so CPU time is 41 nano-seconds.
+
+### Matrix Mul
+from https://godbolt.org/z/9rfE4d1eW: there are 143 instructions.\
+so CPU time is 143 nano-seconds.
 
 
 
