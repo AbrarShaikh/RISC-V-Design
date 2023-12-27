@@ -31,7 +31,9 @@ Hence **CPI** is 1.
 
 #### ALU
 in alu.c code there are 191 instructions.
-so the Number of CPU clock cycles for alu program is 191x1 = 191 
+so the ```Number of CPU clock cycles``` for alu program is 191x1 = 191.\
+Assuming the clock cycle to be 1GHz.\
+CPU time is ~ 0.2 pic seconds.
 
 
 
