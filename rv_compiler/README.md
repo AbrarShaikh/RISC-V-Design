@@ -1,8 +1,14 @@
 ## RISC-V Compiler
 
 Compilation
+-- with 64-bit rv
 ```
 riscv64-unknown-elf-gcc alu.c -o alurv
+riscv64-unknown-elf-gcc -march=rv64i -mabi=lp64 -ffreestanding alu.c -o alu64 
+```
+-- with 32-bit rv
+```
+riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -ffreestanding  alu.c -o alu32
 ```
 Assembly
 ```
