@@ -20,5 +20,18 @@ spike pk alurv
 #### Comparison Using https://godbolt.org/
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/c05ef98f-a4a8-4072-a18f-1ba32760f8c3)
 
+### CPU Performance
+
+CPU execution time of a program can be calculated as
+```
+CPU Time = CPI x Instruction count x Clock Cycle Time
+```
+In general, RICS-V’s cores ```e.g. SiFive U54``` execute one instruction per clock cycle per pipeline.\
+Hence **CPI** is 1.
+
+#### ALU
+in alu.c code there are 191 instructions.
+so the Number of CPU clock cycles for alu program is 191x1 = 191 
+
 
 
