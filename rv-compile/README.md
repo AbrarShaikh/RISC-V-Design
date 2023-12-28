@@ -30,9 +30,15 @@ spike pk alurv
 4-Bit ALU C-code has complied in RV-gcc ans x86-gcc and output and Dis-Assembled code is compared.\
 It can be observed that ```Text code``` of RISC-V is **28x** times compared to x86 and ```Data``` is **7x** time.\
 The total file size is **25x**.\
+#### RISC-V vs x86
 ![Screenshot 2023-12-26 195934](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/42f5e4b5-74b0-4b23-b153-0ce70d374788)
+
+#### RISCV-64 vs RISCV-32
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/4316c403-8e6e-4225-b22f-7686b86e768e)
+
 #### Assembly code Comparison generated from GCC
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/72b9ff70-5795-4b85-8a60-e9c67a24c16c)
+
 #### Comparison Using https://godbolt.org/
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/c05ef98f-a4a8-4072-a18f-1ba32760f8c3)
 
