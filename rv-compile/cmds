@@ -1,0 +1,14 @@
+/home/vsduser/riscv32-toolchain/bin/riscv32-unknown-elf-gcc --version
+
+riscv32-unknown-elf-gcc -march=rv32i -mabi=ilp32 -ffreestanding -o output filename.c
+
+riscv64-unknown-elf-gcc -march=rv64i -mabi=lp64 -ffreestanding alu.c -o alu64 
+riscv64-unknown-elf-gcc alu.c -o alurv
+
+riscv64-unknown-elf-gcc -o hello hello.c
+riscv64-unknown-elf-gcc -S hello.c
+spike pk hello
+
+riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -ffreestanding -nostdlib -o output filename.c
+riscv64-unknown-elf-objdump -d -r output > assembly.txt
+
