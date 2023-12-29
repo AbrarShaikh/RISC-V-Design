@@ -52,7 +52,7 @@ CPU Time = CPI x Instruction count x Clock Cycle Time
 CPU clock cycles = CPI x Instruction count
 ```
 In general, RICS-V’s cores ```e.g. SiFive U54``` execute one instruction per clock cycle per pipeline.\
-Hence **CPI** is 1.
+Hence **CPI** is 1 (assuming No Pipeline).
 
 ### ALU
 in alu.c code there are 191 instructions.
