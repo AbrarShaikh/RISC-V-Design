@@ -14,35 +14,6 @@
 ```
 Total Number of instructions    : 530
 Number of different instructions: 35
-or bgeu sll ecall
-bltz
-jal
-neg
-j
-mv
-lbu
-ret
-sub
-addi
-beqz
-add
-jr
-slli
-nop
-beq
-bltu
-blt
-ori
-lui
-bge
-and
-srai
-sw
-bnez
-lw
-andi
-auipc
-sb
-bne
-jalr
-li
+bnez		jal		lbu		lui		nop		jr		addi		andi		or		srai		bge		sub		lw		bne		bgeu		bltujalr		beqz
+beq		neg		and		j		ret		ori		auipc		ecall		add		slli		sw		sb		mv		bltz		li		blt		sll
+```
