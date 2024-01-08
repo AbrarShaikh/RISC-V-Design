@@ -15,7 +15,7 @@ def main(argv):
         
     for opt, arg in opts:
         if opt == '-h':
-            print(f'{sys.argv[0]} -i <inputfile> -o <outputfile>' + "\n" + "-h this help")
+            print("python3 "+ f'{sys.argv[0]} -i <inputfile> -o <outputfile>' + "\n" + "-h this help")
             sys.exit()
         elif opt in ("-i", "--ifile"):
             inputfile = arg
@@ -34,20 +34,23 @@ def main(argv):
                 instruction = parts[2]
                 unique_instructions.add(instruction)
                 count += 1
+    file.close()
 
     if outputfile != "":
         with open(outputfile, 'w') as file:
-            file.write(f"Total Number of instructions: {count}" + "\n")
+            file.write(f"Total Number of instructions    : {count}" + "\n")
             file.write(f"Number of different instructions: {len(unique_instructions)}" + "\n")
+            file.write(f"List of unique instructions:" + "\n")
             for instruction in unique_instructions:
                 file.write(instruction + "\n")
+        file.close()
     else:
-        print("Total Number of different instructions: {count}" + "\n")
+        print(f"Total Number of instructions    : {count}")
         print(f"Number of different instructions: {len(unique_instructions)}")
         print("List of unique instructions:")
         for instruction in unique_instructions:
-            print(instruction)
+            print(instruction, end='\t')
+        print('\n')
 
 if __name__ == "__main__":
    main(sys.argv[1:])
-
