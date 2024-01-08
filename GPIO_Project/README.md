@@ -11,6 +11,7 @@
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/c8646faf-ef43-4b44-8451-6394aed374f6)
 
 ## CPU Instruction Count
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/470886ae-b5c2-4986-adb6-574431200369)
 ```
 Total Number of instructions    : 530
 Number of different instructions: 35
