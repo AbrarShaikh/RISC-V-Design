@@ -10,7 +10,7 @@ def main(argv):
         
     except:
         print("Unhandled option\n")
-        print("try for help: rvisa_count.py -h ")
+        print("try for help: " + f'{sys.argv[0]} -h')
         sys.exit()
         
     for opt, arg in opts:
