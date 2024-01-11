@@ -5,7 +5,7 @@
 
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/blob/main/GPIO_Project/images/keybad.png)
 
--- Keypad code used for tracing each Row and Coulunm to get pressed key button
+-- Keypad code used for tracing each Row and Coulunm to scan pressed key button
 
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/blob/main/GPIO_Project/images/keypadcode.png)
 
