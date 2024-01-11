@@ -13,6 +13,30 @@
 -- 7-segment Led is used as the output interface\
 -- Here 0 to 9 and A,b,C,d,E,F are displayed.
 
+<details>
+<summary>7 segment binary code</summary> 
+
+| Data | Binary code | 
+| --- | --- |
+| 1 | 0110000 |
+| 2 | 1101101 |
+| 3 | 1111001 |
+| 4 | 0110011 |
+| 5 | 1011011 |
+| 6 | 1011110 |
+| 7 | 1110000 |
+| 8 | 1111111 |
+| 9 | 1110011 |
+| 0 | 0000000 |
+| A | 1110111 |
+| b | 0011111 |
+| C | 1001110 |
+| d | 0111101 |
+| E | 1001111 |
+| F | 1000111 |
+| - | 0000001 |
+</details>
+
 ![7segmentLed](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/363a366a-2613-469b-b1e0-812e617141e2)
 
 ## I-O Interface
