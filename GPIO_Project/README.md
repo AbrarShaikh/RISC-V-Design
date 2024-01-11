@@ -7,9 +7,9 @@
 
 ## Output Interface
 -- 7-segment Led is used as the output interface\
--- Here 0 to 9 and A,b,C,d,E,F are dispalyed.
+-- Here 0 to 9 and A,b,C,d,E,F are displayed.
 
-![image](https://github.com/AbrarShaikh/RISC-V-Design/blob/main/GPIO_Project/images/7segmentLed.png)
+![7segmentLed](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/363a366a-2613-469b-b1e0-812e617141e2)
 
 ## I-O Interface
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/blob/main/GPIO_Project/images/gpio-interface.png)
