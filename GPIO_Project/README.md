@@ -5,6 +5,10 @@
 
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/blob/main/GPIO_Project/images/keybad.png)
 
+-- Keypad code used for tracing each Row and Coulunm to get pressed key button
+
+![image](https://github.com/AbrarShaikh/RISC-V-Design/blob/main/GPIO_Project/images/keypadcode.png)
+
 ## Output Interface
 -- 7-segment Led is used as the output interface\
 -- Here 0 to 9 and A,b,C,d,E,F are displayed.
