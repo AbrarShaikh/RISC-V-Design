@@ -5,7 +5,7 @@
 
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/blob/main/GPIO_Project/images/keybad.png)
 
--- Keypad code used for tracing each Row and Coulunm to scan pressed key button
+-- Keypad code used for traversing each Row and Coulunm to scan pressed key button
 
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/blob/main/GPIO_Project/images/keypadcode.png)
 
@@ -14,7 +14,7 @@
 -- Here 0 to 9 and A,b,C,d,E,F are displayed.
 
 <details>
-<summary>7 segment binary code</summary> 
+<summary>7 segment (Common Cathode) binary code</summary> 
 
 | Data | Binary code | 
 | --- | --- |
