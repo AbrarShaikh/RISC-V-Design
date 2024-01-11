@@ -1,10 +1,14 @@
 # GP-I/O
+-- In this project, a general purpose input output interface is realised with RISC-V ISA.
 ## Input Interface
--- Keypad of 4x4\
+-- The keypad of 4x4 Matrix is used as input for this gpio project with characters {0-9, A-E}
+
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/blob/main/GPIO_Project/images/keybad.png)
 
 ## Output Interface
--- 7-segment Led\
+-- 7-segment Led is used as the output interface\
+-- Here 0 to 9 and A,b,C,d,E,F are dispalyed.
+
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/blob/main/GPIO_Project/images/7segmentLed.png)
 
 ## I-O Interface
