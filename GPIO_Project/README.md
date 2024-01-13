@@ -56,3 +56,5 @@ jalr	add	blt	lbu	j
 sll	neg	sw	lw	addi
 lui	srai	auipc	ret	li	
 ```
+## Testing
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/e243249c-eb22-4f94-8bf3-5eb3173edf61)
