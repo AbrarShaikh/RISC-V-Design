@@ -1,3 +1,34 @@
+### RISC-V 32-Bit Compiler Installation
+    sudo apt install libc6-dev 
+-- Clone RICS-V GitHub repository
+```
+git clone https://github.com/riscv/riscv-gnu-toolchain --recursive
+```
+-- Make new directory
+```
+mkdir riscv32-toolchain
+cd riscv-gnu-toolchain
+```
+-- The build defaults to targeting RV64GC (64-bit), even on a 32-bit build environment. To build the 32-bit RV32GCC toolchain
+
+    ./configure --prefix=/home/<username>/riscv32-toolchain --with-arch=rv32i --with-abi=ilp32
+```
+sudo apt install libgmp-dev
+make
+```
+-- Access riscv32-unknown-elf-gcc inside bin folder of riscv32-toolchain folder in home folder of <user> 
+
+    /home/<user>/riscv32-toolchain/bin/riscv32-unknown-elf-gcc --version
+-- Add riscv32 gcc to PATH\
+Open ```bashrc``` in home directory.
+
+    sudo gedit ~/.bashrc
+-- Add below PATH in bashrc
+
+    export PATH=/home/<user>/riscv32-toolchain/bin:$PATH
+    source ~/.bashrc
+-- In working directory, type riscv then hit ```TAB``` multiple times
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/812a4907-1bd0-4945-bd8b-981fb797caf9)
 ## RISC-V Compiler
 
 Compilation\
