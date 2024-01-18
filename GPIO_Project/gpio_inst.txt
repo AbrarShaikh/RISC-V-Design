@@ -1,37 +1,23 @@
-Total Number of instructions: 530
-Number of different instructions: 35
-or
-bgeu
-sll
-ecall
-bltz
-jal
-neg
+Total Number of instructions : 213
+Number of unique instructions: 20
+List of unique instructions:
+li
 j
+bne
+andi
+srli
+slli
+add
+sw
 mv
-lbu
+lw
+or
+bgtz
+jal
+nop
+and
 ret
-sub
+lui
 addi
 beqz
-add
-jr
-slli
-nop
-beq
-bltu
-blt
-ori
-lui
-bge
-and
-srai
-sw
 bnez
-lw
-andi
-auipc
-sb
-bne
-jalr
-li
