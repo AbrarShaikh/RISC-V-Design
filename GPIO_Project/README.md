@@ -40,21 +40,17 @@
 ![7segmentLed](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/363a366a-2613-469b-b1e0-812e617141e2)
 
 ## I-O Interface
-![image](https://github.com/AbrarShaikh/RISC-V-Design/blob/main/GPIO_Project/images/gpio-interface.png)
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/772ea142-e755-4253-8b11-fb0c4377a142)
 
 ## CPU Instruction Count
-![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/470886ae-b5c2-4986-adb6-574431200369)
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/be4f5485-7ff9-4670-803e-759f7b6031f2)
+
 ```
-Total Number of instructions    : 530
-Number of different instructions: 35
+Total Number of instructions : 213
+Number of unique instructions: 20
 List of unique instructions:
-jal	ecall	sb	beq	or
-beqz	slli	bge	bnez	andi
-bltu	bne	and	mv	ori
-jr	sub	bgeu	nop	bltz
-jalr	add	blt	lbu	j
-sll	neg	sw	lw	addi
-lui	srai	auipc	ret	li	
+slli	bgtz	j	nop	mv	and	ret	sw	add
+bnez	or	lui	andi	beqz	li	srli	addi	jalbne	lw	
 ```
 ## Testing
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/e243249c-eb22-4f94-8bf3-5eb3173edf61)
