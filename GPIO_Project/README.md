@@ -49,8 +49,8 @@
 Total Number of instructions : 213
 Number of unique instructions: 20
 List of unique instructions:
-slli	bgtz	j	nop	mv	and	ret	sw	add
-bnez	or	lui	andi	beqz	li	srli	addi	jalbne	lw	
+slli	bgtz	j	nop	mv	and	ret	sw	add  bne	
+bnez	or	lui	andi	beqz	li	srli	addi	jal  lw  
 ```
 ## Testing
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/e243249c-eb22-4f94-8bf3-5eb3173edf61)
