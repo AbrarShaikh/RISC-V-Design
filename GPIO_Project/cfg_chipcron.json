@@ -12,7 +12,7 @@
         "JAL"   :true,  
         "JALR"  :true,
         "BEQ"   :true,
-        "BNE"   :true,
+        "BNE"   :false,
         "BLT"   :false,
         "BGE"   :true,
         "BLTU"  :false,
