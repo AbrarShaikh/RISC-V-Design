@@ -54,3 +54,8 @@ bnez	or	lui	andi	beqz	li	srli	addi	jal  lw
 ```
 ## Testing
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/e243249c-eb22-4f94-8bf3-5eb3173edf61)
+
+## Verilog Simulation
+
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/5ae83526-1897-4d85-84e9-0abe431b1ba8)
+
