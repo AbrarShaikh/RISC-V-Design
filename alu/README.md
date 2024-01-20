@@ -15,6 +15,18 @@ For Logical operations, the input number is taken as integer type and printed re
 4-bits of 2 input is taken, and 3-bits of the select line for Operation selection.\
 Simulation is done with constant input numbers.\
 Test bench is written by keeping 2-input numbers constant and looping select line from 0 to 7.
+### Verilog 4bit ALU
+-- compiler verilog with test bench
+
+Note that the alu_tb.v test bench sets up the test operations and defines the name of the .vcd file for gtkwave
+```
+iverilog -o alu_v alu_tb.v alu.v
+```
+-- execute verilog
+```
+vvp alu_v
+```
+-- display gtkwave for ALU
 
 Test result was dumped using ```$dumpfile("waveform_alu.vcd")``` in vcd format.\
 And all variables are saved using ```$dumpvars```
