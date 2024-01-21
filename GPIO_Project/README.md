@@ -56,8 +56,15 @@ bnez	or	lui	andi	beqz	li	srli	addi	jal  lw
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/190251b8-d72d-421d-908f-32c334b7bca9)
 
 ## Verilog Simulation
+```
+iverilog -o gpio_sim gpio_tb.v  gpio.v
+vvp doorbell_v -fst
+```
+-- running simulator with -fst flag to compress the .vcd file as the raw file waveform can get very large. 
+
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/5ae83526-1897-4d85-84e9-0abe431b1ba8)
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/0ebf2d28-12d9-49fa-a781-dd3aa43090c1)
+
 ### GTKwave Simulation
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/59ee2710-5656-44d6-8d63-cb716faa4ed3)
 
