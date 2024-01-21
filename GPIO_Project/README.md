@@ -53,7 +53,7 @@ slli	bgtz	j	nop	mv	and	ret	sw	add  bne
 bnez	or	lui	andi	beqz	li	srli	addi	jal  lw  
 ```
 ## Testing
-![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/e243249c-eb22-4f94-8bf3-5eb3173edf61)
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/190251b8-d72d-421d-908f-32c334b7bca9)
 
 ## Verilog Simulation
 
