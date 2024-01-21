@@ -58,4 +58,6 @@ bnez	or	lui	andi	beqz	li	srli	addi	jal  lw
 ## Verilog Simulation
 
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/5ae83526-1897-4d85-84e9-0abe431b1ba8)
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/0ebf2d28-12d9-49fa-a781-dd3aa43090c1)
+
 
