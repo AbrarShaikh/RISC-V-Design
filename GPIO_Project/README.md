@@ -58,7 +58,7 @@ bnez	or	lui	andi	beqz	li	srli	addi	jal  lw
 ## Verilog Simulation
 ```
 iverilog -o gpio_sim gpio_tb.v  gpio.v
-vvp doorbell_v -fst
+vvp gpio_sim -fst
 ```
 -- running simulator with -fst flag to compress the .vcd file as the raw file waveform can get very large. 
 
