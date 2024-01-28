@@ -66,7 +66,12 @@ vvp gpio_sim -fst
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/0ebf2d28-12d9-49fa-a781-dd3aa43090c1)
 
 ### GTKwave Simulation
-![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/59ee2710-5656-44d6-8d63-cb716faa4ed3)
+-- monitoring Delay, Keypad row & col code and display output
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/87e376bf-7290-40cd-a92f-9a0d7c589537)
+-- monitoring x30 REG with via output_pins and gpio_pins
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/9fe338d5-81be-461b-af3a-96434e1c0cef)
+
+
 
 
 
