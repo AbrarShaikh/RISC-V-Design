@@ -64,3 +64,7 @@ dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib
 ```
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/edd62d16-149f-4d3a-b033-a34c2b19e4c0)
 
+-- Synthesis dumping output
+```
+write_verilog synth_gpio.v
+```
