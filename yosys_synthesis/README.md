@@ -1,7 +1,7 @@
 #### Yosys (VM install)
 
 Installing Yosys: https://github.com/YosysHQ/yosys on the vsdworkshop VM.\
--- Install the latest by entering the following commands in the terminal:
+-- Install the latest version by entering the following commands in the terminal:
 ```
 sudo apt install build-essential clang bison flex libreadline-dev \
     gawk tcl-dev libffi-dev git graphviz \
