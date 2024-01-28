@@ -68,3 +68,9 @@ dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib
 ```
 write_verilog synth_gpio.v
 ```
+-- Generating Graphviz representation of design
+```
+show wrapper
+```
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/68fbbf48-24b7-46ec-90e2-dacb437e4068)
+
