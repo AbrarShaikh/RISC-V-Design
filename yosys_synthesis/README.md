@@ -25,7 +25,8 @@ make test
 ```
 
 ## Gate Level Synthesis - GLS
--- Comment out the data & instruction memory modules in processor.v and ensure writing_inst_done=1 for uart verification OR writing_inst_done=0 to bypass uart for simulation.\
+-- Comment out the data & instruction memory modules in processor.v and ensure **writing_inst_done=1** for **uart** verification,\
+OR **writing_inst_done=0** to **bypass uart** for simulation.\
 -- All required ```sky130``` libs are kept in the current working directory, and proper instantiation name is used for **SRAM** from sky130 libs.\
 
 ### Use the following yosys commands to synthesize gate-level netlist
@@ -74,3 +75,13 @@ show wrapper
 ```
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/68fbbf48-24b7-46ec-90e2-dacb437e4068)
 
+### Gate Level Simulation
+-- for iverilog simulation of synth_gpio.v, SRAM instantiation should be renamed as per module definition from sky130_sram_1kbyte_1rw1r_32x512_8.v\
+-- Verilog simulation of Gate level synthesized desigb with external sram.
+```
+iverilog -o output_gls gpio1_tb.v synth_gpio1.v sky130_sram_1kbyte_1rw1r_32x256_8.v sky130_fd_sc_hd.v primitives.v
+./output_gls
+gtkwave waveform.vcd
+```
+-- Simulation results should be same as pre-synthesized RTL code
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/7b754614-d2e2-42e8-a552-f22d5ad3ea34)
