@@ -70,6 +70,8 @@ vvp gpio_sim -fst
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/87e376bf-7290-40cd-a92f-9a0d7c589537)
 -- monitoring x30 REG with via output_pins and gpio_pins
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/9fe338d5-81be-461b-af3a-96434e1c0cef)
+-- monitoring PC, Instruction ID and x30 REG
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/a212bb34-3334-4f6a-bcba-1774c8bc1b93)
 
 
 
