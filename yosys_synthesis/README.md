@@ -46,3 +46,10 @@ read_verilog gpio_syn.v
 ```
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/cb569ac4-363c-4555-91bc-595371c80118)
 
+-- Synthesis of top module (wrapper)
+```
+synth -top wrapper
+```
+![Screenshot 2024-01-28 000756](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/62219721-2b8f-4670-ae95-5334ca2d6804)
+
+
