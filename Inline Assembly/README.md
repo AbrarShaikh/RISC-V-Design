@@ -44,3 +44,9 @@ Parameters:\
 asm statements may not perform jumps into other asm statements, only to the listed GotoLabels. GCC’s optimizers do not know about other jumps; therefore they cannot take account of them when deciding how to optimize.
 
 >> The total number of input + output + goto operands is limited to 30.
+
+
+Reference:\
+https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html#basic-asm-assembler-instructions-without-operands \
+https://dmalcolm.fedorapeople.org/gcc/2015-08-31/rst-experiment/how-to-use-inline-assembly-language-in-c-code.html#qualifiers \
+http://www.ethernut.de/en/documents/arm-inline-asm.html
