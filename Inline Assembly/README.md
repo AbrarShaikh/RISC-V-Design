@@ -15,7 +15,8 @@ Qualifiers: \
 
 ### Extended Asm - Assembler Instructions with C Expression Operands
 
-Using extended asm typically produces smaller, safer, and more efficient code, and in most cases it is a better solution than basic asm.
+-- Using extended asm typically produces smaller, safer, and more efficient code, and in most cases it is a better solution than basic asm.\
+-- helps to maximize performance in time-sensitive code or to access assembly instructions that are not readily available to C programs.
 ```
 asm asm-qualifiers ( AssemblerTemplate
                  : OutputOperands
@@ -42,4 +43,4 @@ Parameters:\
 4. GotoLabels: When you are using the goto form of asm, this section contains the list of all C labels to which the code in the AssemblerTemplate may jump. See Goto Labels.
 asm statements may not perform jumps into other asm statements, only to the listed GotoLabels. GCC’s optimizers do not know about other jumps; therefore they cannot take account of them when deciding how to optimize.
 
--- The total number of input + output + goto operands is limited to 30.
+>> The total number of input + output + goto operands is limited to 30.
