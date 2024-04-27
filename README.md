@@ -50,3 +50,41 @@ Test Bench is written with Two 4-bit inputs as A=11, B=3, and a 3-bit select lin
 e.g ==> for SL=3, Division is performed and the result is stored in 2 parts, MSB having Quotient and LSB having Remender.\
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/5bc6aed1-ef43-47a9-a230-022618372ff5)
 
+# Sky130 RTL Synthesis for RISC-V
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/bcd40f35-4e6b-475b-86f1-62d52df27a51)
+- synthesis process for RTL (Register-Transfer Level) code using the SkyWater 130nm (Sky130) process and the Yosys tool for RISC-V designs.
+
+## Gate Level Synthesis - GLS with YOSYS
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/0a598b74-3b9a-4f9b-ae76-a6ba6947e53d)
+
+-- Read liberty file to import sky130 cells
+```
+read_liberty -lib sky130_fd_sc_hd__tt_025C_1v80_256.lib
+```
+-- Read your verilog file and generate RTLIL
+```
+read_verilog gpio_syn.v
+```
+-- Synthesis of top module (wrapper)
+```
+synth -top wrapper
+```
+-- Mapping yosys standard cell to sky130 lib logic cells
+```
+abc -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib
+```
+-- Mapping sky130 lib flip-flop cells
+```
+dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib
+```
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/b8c81142-f363-4ddf-b2d2-aae5694851ba)
+
+## Gate Level Simulation
+-- Verilog simulation of Gate level synthesized design with external sram.
+```
+iverilog -o output_gls gpio1_tb.v synth_gpio1.v sky130_sram_1kbyte_1rw1r_32x256_8.v sky130_fd_sc_hd.v primitives.v
+./output_gls
+gtkwave waveform.vcd
+```
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/774f78be-342f-443b-942c-e5019b5b2785)
+
