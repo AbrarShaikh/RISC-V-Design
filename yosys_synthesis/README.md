@@ -73,6 +73,9 @@ write_verilog synth_gpio.v
 ```
 show wrapper
 ```
+```
+show -colors 2 -width -signed wrapper
+```
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/68fbbf48-24b7-46ec-90e2-dacb437e4068)
 
 ### Gate Level Simulation
