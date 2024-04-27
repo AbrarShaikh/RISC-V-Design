@@ -1,4 +1,4 @@
-for MASM - Macro Assembler: _asm{} in Microsoft Visual C++ (MSVC) allows to embedd assembler instructions within C code.\
+for __MASM__ - Macro Assembler: _asm{} in Microsoft Visual C++ (MSVC) allows to embedd assembler instructions within C code.\
 asm (or __ asm __) in GCC.
 
 ## Two forms of inline asm statements
@@ -47,6 +47,6 @@ asm statements may not perform jumps into other asm statements, only to the list
 
 
 Reference:\
-https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html#basic-asm-assembler-instructions-without-operands \
-https://dmalcolm.fedorapeople.org/gcc/2015-08-31/rst-experiment/how-to-use-inline-assembly-language-in-c-code.html#qualifiers \
-http://www.ethernut.de/en/documents/arm-inline-asm.html
+1. https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html#basic-asm-assembler-instructions-without-operands
+2. https://dmalcolm.fedorapeople.org/gcc/2015-08-31/rst-experiment/how-to-use-inline-assembly-language-in-c-code.html#qualifiers
+3. http://www.ethernut.de/en/documents/arm-inline-asm.html
