@@ -59,6 +59,21 @@ int read_delay(void)
                );
     return delay;
 }
+``` 
+### Display Output in 7-segment Led pins
+``` C
+void display_output(int num)
+{
+	int mask=0xFFFF80FF;       //Masking only 7 bits
+	int temp=num << 8;         //shift by 8 bits to left to update display bits in x30[14:8]
+	asm volatile( 
+	    "and x30, x30, %1\n\t" //%1 is mask
+	    "or  x30, x30, %0\n\t" //%0 is temp
+	    :
+	    :"r"(temp),"r"(mask)
+	    :"x30"                 // clobber list,indicating that x30 is modified
+	    );
+}
 ```
 
 ## CPU Instruction Count
