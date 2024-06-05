@@ -55,6 +55,7 @@ int read_delay(void)
                "andi %0, x10, 1\n\t"   // "and" with 1 to get the value of x30[31] now in
                                        // x10[0] x10[0] will be 1 if x30[31] is 1
                :"=r"(delay)
+               :
                :"x10"                  // clobber list,indicating that x10 is modified
                );
     return delay;
