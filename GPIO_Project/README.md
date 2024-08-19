@@ -76,7 +76,27 @@ void display_output(int num)
 	    );
 }
 ```
-
+```c
+int read_keypad(void)
+{
+	//row 0
+	//row0=0xE=b1110=14;
+	/*PUT Row0Code*/
+	asm volatile(
+		"and x30, x30, %0\n\t"
+	"ori x30, x30, 14\n\t"
+	:
+	:"r"(mask)
+	:"x30"
+	);
+	/*Read Cols*/	
+	asm volatile(
+	"andi %0, x30, 240\n\t"
+	:"=r"(keypad)
+	:
+	:
+	);
+```
 ## CPU Instruction Count
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/be4f5485-7ff9-4670-803e-759f7b6031f2)
 
