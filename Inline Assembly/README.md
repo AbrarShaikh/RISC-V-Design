@@ -58,3 +58,4 @@ Reference:\
 1. https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html#basic-asm-assembler-instructions-without-operands
 2. https://dmalcolm.fedorapeople.org/gcc/2015-08-31/rst-experiment/how-to-use-inline-assembly-language-in-c-code.html#qualifiers
 3. http://www.ethernut.de/en/documents/arm-inline-asm.html
+4. https://dl.acm.org/doi/fullHtml/10.5555/3024956.3024958
