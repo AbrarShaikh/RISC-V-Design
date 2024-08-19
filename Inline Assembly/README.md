@@ -48,6 +48,27 @@ Parameters:
 3. InputOperands: A comma-separated list of C expressions read by the instructions in the AssemblerTemplate. An empty list is permitted.
 4. __Clobbers__: (Scratch Registers) A comma-separated list of registers or other values changed by the AssemblerTemplate, beyond those listed as outputs. An empty list is permitted.
 4. GotoLabels: When you are using the goto form of asm, this section contains the list of all C labels to which the code in the AssemblerTemplate may jump. See Goto Labels.
+
+## Code
+```c
+  /*PUT Row0Code*/
+  asm volatile(
+    "and x30, x30, %0\n\t"
+      "ori x30, x30, 14\n\t"
+      :
+      :"r"(mask)
+      :"x30"
+      );
+```
+```c
+  /*Read Cols*/	
+  asm volatile(
+    "andi %0, x30, 240\n\t"
+    :"=r"(keypad)
+    :
+    :
+    );
+```
 #
 asm statements may not perform jumps into other asm statements, only to the listed GotoLabels. GCC’s optimizers do not know about other jumps; therefore they cannot take account of them when deciding how to optimize.
 
